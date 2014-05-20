@@ -1,0 +1,40 @@
+{
+  "name": "uk-counties",
+  "version": "0.0.1",
+  "description": "A list of counties within England, Northern Ireland, Scotland and Wales",
+  "main": "counties.js",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint .",
+    "pretest": "npm run-script lint",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive -R spec",
+    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
+    "prepublish": "npm test && npm prune"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:confuser/node-uk-counties.git"
+  },
+  "keywords": [
+    "uk",
+    "counties",
+    "england",
+    "ireland",
+    "scotland",
+    "wales"
+  ],
+  "author": "James Mortemore <jamesmortemore@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/confuser/node-uk-counties/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0",
+    "istanbul": "~0.1.44",
+    "async": "~0.2.9",
+    "should": "2",
+    "jshint": "~2.3.0"
+  }
+}
