@@ -1,6 +1,6 @@
 {
   "name": "uk-counties",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A list of counties within England, Northern Ireland, Scotland and Wales",
   "main": "counties.js",
   "publishConfig": {
