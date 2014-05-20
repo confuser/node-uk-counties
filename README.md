@@ -14,7 +14,7 @@ Below is a simple example for usage:
 
 ```js
 
-var counties = require('counties') // All counties
+var counties = require('uk-counties') // All counties
   , england = counties.england
   , northernIreland = counties.northern-ireland
   , scotland = counties.scotland
