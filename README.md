@@ -21,5 +21,8 @@ var counties = require('uk-counties') // All counties
   , wales = counties.wales
 ```
 
+## Source
+http://county-wise.org.uk/counties/
+
 ## Licence
 Licensed under the [New BSD License](http://opensource.org/licenses/bsd-license.php)
